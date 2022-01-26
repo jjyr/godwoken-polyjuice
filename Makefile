@@ -37,7 +37,7 @@ VALIDATOR_FLAGS := -DGW_VALIDATOR
 MOLC := moleculec
 MOLC_VERSION := $(shell cat deps/godwoken-scripts/c/Makefile | egrep "MOLC_VERSION :=" | awk '{print $$3}')
 PROTOCOL_VERSION := $(shell cat deps/godwoken-scripts/c/Makefile | egrep "PROTOCOL_VERSION :=" | awk '{print $$3}')
-PROTOCOL_SCHEMA_URL := https://raw.githubusercontent.com/nervosnetwork/godwoken/${PROTOCOL_VERSION}/crates/types/schemas
+PROTOCOL_SCHEMA_URL := https://raw.githubusercontent.com/jjyr/godwoken/${PROTOCOL_VERSION}/crates/types/schemas
 
 ALL_OBJS := build/execution_state.o build/baseline.o build/analysis.o build/instruction_metrics.o build/instruction_names.o build/execution.o build/instructions.o build/instructions_calls.o build/evmone.o \
   build/keccak.o build/keccakf800.o \
